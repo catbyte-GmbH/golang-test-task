@@ -23,6 +23,12 @@ func Message(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"": q})
+	c.JSON(http.StatusOK, gin.H{"Success": q})
 
+}
+
+func MessageList(c *gin.Context) {
+	MessageProcessor()	
+	
+	c.JSON(http.StatusOK, gin.H{"Success": "test"})
 }

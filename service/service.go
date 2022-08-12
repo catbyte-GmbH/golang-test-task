@@ -14,6 +14,6 @@ func ServiceRun() {
 	})
 
 	r.POST("/message", hand.Message)
-
+	r.GET("/message/list", hand.MessageList)
 	r.Run()
 }
